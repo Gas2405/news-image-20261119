@@ -152,11 +152,18 @@ const ART = {
     <text x="165" y="228" text-anchor="middle" font-family="Liberation Sans" font-size="14" font-weight="bold" fill="#dce8f2">THE HAGUE</text>
   </svg>`,
   flags: `<svg width="100" height="100" viewBox="0 0 100 100">
+    <defs>
+      <path id="star5" d="M0,-5 L1.47,-1.62 L4.76,-1.55 L2.38,0.62 L3.09,4.05 L0,2 L-3.09,4.05 L-2.38,0.62 L-4.76,-1.55 L-1.47,-1.62 Z"/>
+    </defs>
     <rect width="100" height="100" fill="#e9e4d4"/>
     <rect x="10" y="12" width="34" height="22" fill="#9e1b1b"/>
-    <rect x="10" y="12" width="34" height="4.4" fill="#e0aa3e"/>
-    <rect x="10" y="20.8" width="34" height="4.4" fill="#e0aa3e"/>
-    <rect x="10" y="29.6" width="34" height="4.4" fill="#e0aa3e"/>
+    <g fill="#e0aa3e">
+      <use href="#star5" transform="translate(17,18.5) scale(0.85)"/>
+      <use href="#star5" transform="translate(25.5,15) scale(0.3)"/>
+      <use href="#star5" transform="translate(29,18.5) scale(0.3)"/>
+      <use href="#star5" transform="translate(29,23) scale(0.3)"/>
+      <use href="#star5" transform="translate(25.5,26.5) scale(0.3)"/>
+    </g>
     <path d="M27,12 L27,60" stroke="#1a1712" stroke-width="3"/>
     <rect x="56" y="12" width="34" height="22" fill="#f6f1e5"/>
     <rect x="56" y="12" width="34" height="3.2" fill="#9e1b1b"/>
@@ -164,10 +171,14 @@ const ART = {
     <rect x="56" y="24.8" width="34" height="3.2" fill="#9e1b1b"/>
     <rect x="56" y="30.8" width="34" height="3.2" fill="#9e1b1b"/>
     <rect x="56" y="12" width="14" height="11" fill="#1d3a5f"/>
+    <g fill="#f6f1e5">
+      <circle cx="59.5" cy="14.8" r="0.9"/><circle cx="63" cy="14.8" r="0.9"/><circle cx="66.5" cy="14.8" r="0.9"/>
+      <circle cx="59.5" cy="18.2" r="0.9"/><circle cx="63" cy="18.2" r="0.9"/><circle cx="66.5" cy="18.2" r="0.9"/>
+      <circle cx="59.5" cy="21.4" r="0.9"/><circle cx="63" cy="21.4" r="0.9"/><circle cx="66.5" cy="21.4" r="0.9"/>
+    </g>
     <path d="M73,12 L73,60" stroke="#1a1712" stroke-width="3"/>
     <path d="M22,72 h56" stroke="#1a1712" stroke-width="4"/>
     <path d="M30,72 v12 M70,72 v12" stroke="#1a1712" stroke-width="4"/>
-    <path d="M44,62 l4,6 6,-3 -3,6 6,2 -6,2 2,6 -5,-4 -2,6 -1,-6 -6,3 3,-6 -6,-2 6,-2 Z" fill="#e0aa3e"/>
   </svg>`,
   chart: `<svg width="100" height="100" viewBox="0 0 100 100">
     <rect width="100" height="100" fill="#1d3a5f"/>
